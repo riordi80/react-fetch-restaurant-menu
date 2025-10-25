@@ -6,9 +6,9 @@ A single-page application (SPA) built with React and Vite that displays a restau
 ![Vite](https://img.shields.io/badge/Vite-7.1.7-646CFF?logo=vite)
 ![Material-UI](https://img.shields.io/badge/Material--UI-7.3.4-007FFF?logo=mui)
 
-+  ## Screenshot
+## Screenshot
   
-![Restaurant Menu App Screenshot](public/screenshot.jpg)
+![Restaurant Menu App Screenshot](public/screenshot.png)
 
 
 ## Project Description
