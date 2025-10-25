@@ -1,14 +1,15 @@
 # Restaurant Menu App
 
-A **single-page application (SPA)** built with React and Vite that displays a restaurant menu. The app fetches seafood dishes from TheMealDB public API and implements search, filtering, and sorting capabilities with a focus on usability principles.
+A single-page application (SPA) built with React and Vite that displays a restaurant menu. The app fetches seafood dishes from TheMealDB public API and implements search, filtering, and sorting capabilities with a focus on usability principles.
 
 ![React](https://img.shields.io/badge/React-19.1.1-blue?logo=react)
 ![Vite](https://img.shields.io/badge/Vite-7.1.7-646CFF?logo=vite)
 ![Material-UI](https://img.shields.io/badge/Material--UI-7.3.4-007FFF?logo=mui)
 
-## Screenshot
-
++  ## Screenshot
+  
 ![Restaurant Menu App Screenshot](public/screenshot.jpg)
+
 
 ## Project Description
 
@@ -21,65 +22,65 @@ This project is a practical exercise focused on:
 
 ---
 
-## Functional Requirements ✅
+## Functional Requirements
 
 The application meets all the required functional specifications:
 
-- ✅ **Display dish list** with: name, image, price, and category
-- ✅ **Load data using fetch** inside `useEffect` (no external data libraries)
-- ✅ **Assign prices** to dishes (the API doesn't provide prices - randomly generated €10-€30)
-- ✅ **Show loading states** ("Loading...") and error messages (clear feedback)
-- ✅ **Component structure** with at least 3 components: `<App>`, `<MenuList>`, `<MenuItem>` (actually implements 5 components including `<Home>` and `<FilterBar>`)
+- Display dish list with: name, image, price, and category
+- Load data using fetch inside `useEffect` (no external data libraries)
+- Assign prices to dishes (the API doesn't provide prices - randomly generated €10-€30)
+- Show loading states ("Loading...") and error messages (clear feedback)
+- Component structure with at least 3 components: `<App>`, `<MenuList>`, `<MenuItem>` (actually implements 5 components including `<Home>` and `<FilterBar>`)
 
 ---
 
-## Technical Requirements ✅
+## Technical Requirements
 
 The project fulfills all technical specifications:
 
-- ✅ **Project setup**: Built with Vite
-- ✅ **Functional components**: Uses `useState` and `useEffect` hooks
-- ✅ **Native fetch**: Browser's native fetch API (no Axios)
-- ✅ **Responsive styling**: CSS with grid/flexbox layout, enhanced with Material-UI components
+- Project setup: Built with Vite
+- Functional components: Uses `useState` and `useEffect` hooks
+- Native fetch: Browser's native fetch API (no Axios)
+- Responsive styling: CSS with grid/flexbox layout, enhanced with Material-UI components
 
 ---
 
 ## API Integration
 
-The application uses the specified **TheMealDB** public API (free, no registration required):
+The application uses the specified TheMealDB public API (free, no registration required):
 
 ```
 https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
 ```
 
-**Response structure:**
+Response structure:
 - Contains a list of dishes (`meals`) with: `idMeal`, `strMeal` (name), and `strMealThumb` (image)
-- Prices are **client-side generated** (random values between 1€0-30€) as the API doesn't provide pricing
+- Prices are client-side generated (random values between 10€-30€) as the API doesn't provide pricing
 
-**Data normalization** (src/App.jsx:27-33):
+Data normalization (src/App.jsx:27-33):
 Each item is transformed to include: `id`, `name`, `category`, `thumb`, and `price`
 
 ---
 
-## Usability Principles Applied ✅
+## Usability Principles Applied
 
 The interface implements the following usability fundamentals:
 
-- ✅ **Clarity and readability**: Standard typography with sufficient contrast using Material-UI
-- ✅ **Visual hierarchy**: Image → Name → Category → Price structure in each card
-- ✅ **Immediate feedback**: Loading states and clear, understandable error messages
-- ✅ **Appropriate touch/click targets**: Adequate spacing and button sizes
-- ✅ **Responsive design**: Adaptive grid layout that adjusts to screen width
+- Clarity and readability: Standard typography with sufficient contrast using Material-UI
+- Visual hierarchy: Image → Name → Category → Price structure in each card
+- Immediate feedback: Loading states and clear, understandable error messages
+- Appropriate touch/click targets: Adequate spacing and button sizes
+- Responsive design: Adaptive grid layout that adjusts to screen width
 
 ---
 
-## Optional Extras Implemented ✅
+## Optional Extras Implemented
 
 All optional features have been implemented:
 
-- ✅ **Category filter**: Browse dishes by food category
-- ✅ **Search by name**: Real-time search as you type
-- ✅ **Sort by price**: Ascending/descending price ordering
+- Category filter**: Browse dishes by food category
+- Search by name**: Real-time search as you type
+- Sort by price**: Ascending/descending price ordering
 
 ---
 
